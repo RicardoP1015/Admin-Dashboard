@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/00af512445.js" crossorigin="anonymous"></script>
     <title>Admin Dashboard</title>
 </head>
 
@@ -13,12 +14,12 @@
 
         <header>
             <div class="top-header">
-                <button type="button"></button>
-                <input type="search" />
-                <div class="bell"></div>
+                <button class="search" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search"/>
                 <div class="user">
+                    <button class="bell" type="button"><i class="fa-regular fa-bell"></i></button>
                     <div class="user-img"></div>
-                    <div class="user-name"></div>
+                    <div class="user-name">FatYoshi</div>
                 </div>
             </div>
             <div class="bottom-header">
@@ -26,12 +27,14 @@
                     <div class="user-img-lg"></div>
                     <div class="user-intro">
                         <div class="welcome-user">Hi there,</div>
-                        <div class="user-name-lg"></div>
+                        <div class="user-name-lg">TheYoshi (@theFAtYoish)</div>
                     </div>
-                    <button class="new" type="button">New</button>
-                    <button class="upload" type="button">Upload</button>
-                    <button class="share" type="button">Share</button>
                 </div>
+                    <div class="btn-container">
+                    <button class="new btn" type="button">New</button>
+                    <button class="upload btn" type="button">Upload</button>
+                    <button class="share btn" type="button">Share</button>
+                    </div>
             </div>
         </header>
 
@@ -143,8 +146,8 @@
                 </div>
             </div>
 
-            <div class="announcements">
-                <div class="an-card">
+            <div class="announcement-container">
+                <div class="announcement">
                     <div class="an-text">
                         <h4 class="an-header"></h4>
                         <p class="an">
@@ -156,7 +159,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="an-card">
+                <div class="announcement">
                     <div class="an-text">
                         <h4 class="an-header"></h4>
                         <p class="an">
@@ -168,7 +171,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="an-card">
+                <div class="announcement">
                     <div class="an-text">
                         <h4 class="an-header"></h4>
                         <p class="an">
@@ -181,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="trending">
+            <div class="trending-container">
                 <div class="trend">
                     <div class="trend-img"></div>
                     <div class="trend-info">

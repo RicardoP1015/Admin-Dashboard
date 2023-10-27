@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid;
+    background-image: url(/img/fatyoshi.svg);
+}
+
+.search,
+.bell {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="search"] {
+    background-color: transparent;
+    border: 1px solid;
+    width: 600px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 40px 600px 250px;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.bottom-header {
+    display: grid;
+    grid-template-columns: 400px 300px;
+    gap: 180px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 40px 40px 100px;
+    gap: 25px;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user-img-lg {
+    background-image: url(/img/fatyoshi.svg);
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.user-large {
+    display: grid;
+    grid-template-columns: 60px 325px;
+    gap: 15px;
+    align-items: center;
+}
+
+.welcome-user {
+    font-size: 12px;
+}
+
+.user-name-lg {
+    font-size: 25px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
