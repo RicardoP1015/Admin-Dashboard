@@ -11,8 +11,22 @@ img {
     width: 100%;
 }
 
+header {
+    grid-column: 2/ 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px;
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 1 /3;
+}
+
 .container {
     display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
 }
 
 .user-img {
@@ -23,35 +37,39 @@ img {
     background-image: url(/img/fatyoshi.svg);
 }
 
+.search-wrapper {
+    gap: 20px;
+    display: flex;
+}
+
 .search,
 .bell {
     background: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
 }
 
 input[type="search"] {
     background-color: transparent;
     border: 1px solid;
-    width: 600px;
+    width: 700px;
     height: 30px;
     border-radius: 20px;
 }
 
 .top-header {
     display: grid;
-    grid-template-columns: 40px 600px 250px;
-    align-items: center;
-    gap: 15px;
+    grid-template-columns: 855px 250px;
     margin-top: 20px;
+    align-items: center;
+    gap: 50px;
 }
 
 .bottom-header {
     display: grid;
-    grid-template-columns: 400px 300px;
-    gap: 180px;
-    margin-left: 10px;
+    grid-template-columns: 400px 340px;
+    gap: 400px;
     align-items: center;
 }
 
@@ -83,21 +101,21 @@ input[type="search"] {
 }
 
 .welcome-user {
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .user-name-lg {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .btn-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .btn {
-    width: 90px;
-    height: 30px;
+    width: 95px;
+    height: 35px;
     background-color: transparent;
     border: 1px solid;
     border-radius: 50px;
