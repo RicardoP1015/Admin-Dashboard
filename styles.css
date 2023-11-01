@@ -175,6 +175,7 @@ main {
 .project-header {
     padding-left: 10px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .project-grid {
@@ -235,3 +236,37 @@ main {
     border-radius: 50px;
     background-image: url(/img/fatyoshi.svg);
 }
+
+.announcement-container h2{
+    font-size: 20px;
+}
+
+.announcement-wrapper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.announcement {
+    font-size: 12px;
+}
+
+.side-media {
+    padding: 25px 5px;
+}
+
+.announcement, 
+hr {
+    grid-column: 1 / 3;
+}
+
+.an-text.an {
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.an-header {
+    font-size: 16px;
+}
+
