@@ -181,12 +181,12 @@ main {
 .project-grid {
     display: grid;
     grid-template-columns: 370px 370px;
-    gap: 45px;
+    gap: 25px;
     padding: 10px;
 }
 
 .card {
-    height: 150px;
+    height: 170px;
     width: 370px;
     display: grid;
     grid-template-columns: 1fr 30px 30px 30px;
@@ -237,8 +237,14 @@ main {
     background-image: url(/img/fatyoshi.svg);
 }
 
-.announcement-container h2{
+.container-container {
+    margin-bottom: 10px;
+}
+
+.announcement-container h2,
+.trending-container h2 {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .announcement-wrapper {
@@ -249,7 +255,7 @@ main {
 }
 
 .announcement {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .side-media {
@@ -268,5 +274,19 @@ hr {
 
 .an-header {
     font-size: 16px;
+}
+
+.trend-wrapper {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.trend {
+    display: flex;
+    gap: 15px;
 }
 
