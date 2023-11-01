@@ -16,11 +16,12 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 100px;
+    padding: 0 50px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 250px 1fr;
     height: 100vh;
 }
 
@@ -122,16 +123,15 @@ input[type="search"] {
 
 aside {
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / 6;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 350px 305px;
-    gap: 15px;
+    grid-template-columns: 250px;
+    grid-template-rows: 130px 310px 300px;
 }
 
 .side-header {
     font-size: 25px;
-    padding: 45px 20px;
+    padding: 45px 30px;
 }
 
 .side-btn {
@@ -149,7 +149,7 @@ aside {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 35px);
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .account-bottom {
@@ -157,7 +157,7 @@ aside {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 35px);
     gap: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 main {
@@ -165,6 +165,7 @@ main {
     grid-row: 2 / 4;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 0 20px;
 }
 
 .projects-section {
@@ -228,3 +229,9 @@ main {
     grid-row: 2;
 }
 
+.trend-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: url(/img/fatyoshi.svg);
+}
