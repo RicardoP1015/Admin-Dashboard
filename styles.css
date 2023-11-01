@@ -15,7 +15,7 @@ header {
     grid-column: 2/ 3;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 75px 75px;
     padding: 0 50px;
 }
 
@@ -47,12 +47,12 @@ header {
 }
 
 input[type="search"] {
-    background-color: transparent;
-    border: 1px solid;
+    border: none;
     width: 700px;
     height: 30px;
     border-radius: 20px;
     padding: 0 10px;
+    background-color: #e2e8f0;
 }
 
 .top-header {
@@ -113,12 +113,13 @@ input[type="search"] {
 .btn {
     width: 95px;
     height: 35px;
-    background-color: transparent;
-    border: 1px solid;
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #1a92d3;
 }
 
 aside {
@@ -127,11 +128,23 @@ aside {
     display: grid;
     grid-template-columns: 250px;
     grid-template-rows: 130px 310px 300px;
+    background-color: #1a92d3;
+}
+
+.dash-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    gap: 10px;
+    color: white;
+}
+
+.fa-spider {
+    font-size: 40px;
 }
 
 .side-header {
     font-size: 25px;
-    padding: 45px 30px;
 }
 
 .side-btn {
@@ -142,6 +155,10 @@ aside {
     font-weight: 900;
     text-align: left;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: white;
 }
 
 .account-top {
@@ -166,6 +183,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 0 20px;
+    background-color: #e2e8f0;
 }
 
 .projects-section {
@@ -182,17 +200,18 @@ main {
     display: grid;
     grid-template-columns: 370px 370px;
     gap: 25px;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .card {
-    height: 170px;
+    height: 190px;
     width: 370px;
     display: grid;
     grid-template-columns: 1fr 30px 30px 30px;
     border-radius: 5px;
-    border-left: 5px solid;
+    border-left: 5px solid #f0b42a;
     padding: 10px;
+    background-color: white;
 }
 
 .main-btn {
@@ -231,14 +250,14 @@ main {
 }
 
 .trend-img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50px;
     background-image: url(/img/fatyoshi.svg);
 }
 
-.container-container {
-    margin-bottom: 10px;
+.announcement-container {
+    margin-bottom: 20px;
 }
 
 .announcement-container h2,
@@ -248,14 +267,13 @@ main {
 }
 
 .announcement-wrapper {
-    padding: 30px;
+    padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-}
-
-.announcement {
-    font-size: 11px;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
 }
 
 .side-media {
@@ -267,13 +285,13 @@ hr {
     grid-column: 1 / 3;
 }
 
-.an-text.an {
+.an {
     padding-right: 20px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .an-header {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .trend-wrapper {
@@ -281,12 +299,22 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    padding: 15px 30px;
+    padding: 25px 30px;
     border-radius: 10px;
+    width: 300px;
+    background-color: white;
 }
 
 .trend {
     display: flex;
     gap: 15px;
+}
+
+.trend-info {
+    font-size: 15px;
+}
+
+.trend-header {
+    font-weight: 900;
 }
 
